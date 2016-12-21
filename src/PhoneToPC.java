@@ -12,8 +12,13 @@ import java.io.*;
  * Android Studio and a GUI for the PC application in the future.
  */
 
-
 // Add OS detection e.g is it on Windows, Mac or Linux and adjust accordingly
+
+// Implement APIs of Spotify, Chrome etc.
+
+// Add notification mirroring
+
+// Convert all switch statements to their own classes
 
 public class PhoneToPC {
 	public static void main(String[] args){
@@ -31,7 +36,11 @@ public class PhoneToPC {
 			 * Logout
 			 * Power Off
 			 * Restart
+			 * Volume
 			 */
+			
+			// Sort these to alphabetical
+			
 			switch (mainCommand){
 			case "O":
 				openApp openObject = new openApp();
@@ -84,6 +93,16 @@ public class PhoneToPC {
 				}
 				else{
 					System.out.println("Restart failed");
+				}
+				break;
+			case "V":
+				System.out.print("Enter volume percentage: ");
+				int volPercent = mainScan.nextInt();
+				try{
+					rs.exec("amixer set Master " + volPercent + "%");
+				}
+				catch (Exception e){
+					System.out.println("Please enter a whole number between 0 and 100");
 				}
 				break;
 			case "Q":
