@@ -5,6 +5,7 @@ public class openApp {
 	public void openMain(){
 	    Runtime rs = Runtime.getRuntime();
 	    Scanner openScan = new Scanner(System.in);
+	    
 	    boolean isExecuted = false;
 	    while (isExecuted != true){
 	    	System.out.print("Open: ");

@@ -5,6 +5,7 @@ public class closeApp {
 	public void closeMain(){
 		Runtime rs = Runtime.getRuntime();
 		Scanner closeScan = new Scanner(System.in);
+		
 		boolean isExecuted = false;
 		while (isExecuted != true){
 			System.out.print("Close: ");
