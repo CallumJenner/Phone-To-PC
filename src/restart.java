@@ -1,8 +1,7 @@
 import java.util.*;
-import java.io.*;
 
 public class restart {
-	public void restartMain(){
+	public void restartLinux(){
 		Runtime rs = Runtime.getRuntime();
 		Scanner restartScan = new Scanner(System.in);
 		
@@ -12,12 +11,24 @@ public class restart {
 			try{
 				rs.exec("restart");
 			}
-			catch (IOException i){
+			catch (Exception e){
 				System.out.println("Could not restart");
 			}
 		}
 		else{
 			System.out.println("Restart failed");
 		}
+	}
+	public void restartWin7(){
+		
+	}
+	public void restartWin8(){
+		
+	}
+	public void restartWin10(){
+		
+	}
+	public void restartMacOS(){
+		
 	}
 }

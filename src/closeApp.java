@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class closeApp {
-	public void closeMain(){
+	public void closeLinux(){
 		Runtime rs = Runtime.getRuntime();
 		Scanner closeScan = new Scanner(System.in);
 		
@@ -19,5 +19,17 @@ public class closeApp {
 				isExecuted = false;
 			}
 		}
+	}
+	public void closeWin7(){
+		
+	}
+	public void closeWin8(){
+		
+	}
+	public void closeWin10(){
+		
+	}
+	public void closeMacOS(){
+		
 	}
 }

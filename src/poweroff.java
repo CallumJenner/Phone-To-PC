@@ -1,23 +1,34 @@
 import java.util.*;
-import java.io.IOException;
 
 public class poweroff {
-	public void poweroffMain(){
+	public void poweroffLinux(){
 		Runtime rs = Runtime.getRuntime();
-		Scanner mainScan = new Scanner(System.in);
+		Scanner poweroffScan = new Scanner(System.in);
 		
 		System.out.print("Are you sure you want to power off? Y/N: ");
-		String powerConf = mainScan.next().toUpperCase();
+		String powerConf = poweroffScan.next().toUpperCase();
 		if (powerConf == "Y"){
 			try{
 				rs.exec("poweroff");
 			}
-			catch (IOException i){
+			catch (Exception e){
 				System.out.println("Could not power off");
 			}
 		}
 		else{
 			System.out.println("Poweroff Failed");
 		}
+	}
+	public void poweroffWin7(){
+		
+	}
+	public void poweroffWin8(){
+		
+	}
+	public void poweroffWin10(){
+		
+	}
+	public void poweroffMacOS(){
+		
 	}
 }

@@ -1,8 +1,7 @@
 import java.util.*;
-import java.io.IOException;
 
 public class logout {
-	public void logoutMain(){
+	public void logoutLinux(){
 	    Runtime rs = Runtime.getRuntime();
 		Scanner logoutScan = new Scanner(System.in);
 		
@@ -12,12 +11,24 @@ public class logout {
 			try{
 				rs.exec("pkill x");
 			}
-			catch (IOException i){
+			catch (Exception e){
 				System.out.println("Could not log out");
 			}
 		}
 		else{
 			System.out.println("Logout Failed");
 		}
+	}
+	public void logoutWin7(){
+		
+	}
+	public void logoutWin8(){
+		
+	}
+	public void logoutWin10(){
+		
+	}
+	public void logoutMacOS(){
+		
 	}
 }

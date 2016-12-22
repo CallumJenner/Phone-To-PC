@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class openApp {
-	public void openMain(){
+	public void openLinux(){ // Change to openLinux
 	    Runtime rs = Runtime.getRuntime();
 	    Scanner openScan = new Scanner(System.in);
 	    
@@ -23,6 +23,17 @@ public class openApp {
 				isExecuted = false;
 			}
 	    }
-	    
+	}
+	public void openWin7(){		// See if can make all win in one
+		
+	}
+	public void openWin8(){
+		
+	}
+	public void openWin10(){
+		
+	}
+	public void openMacOS(){
+		
 	}
 }
