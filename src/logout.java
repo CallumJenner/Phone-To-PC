@@ -19,15 +19,19 @@ public class logout {
 			System.out.println("Logout Failed");
 		}
 	}
+	
 	public void logoutWin7(){
 		
 	}
+	
 	public void logoutWin8(){
 		
 	}
+	
 	public void logoutWin10(){
 		
 	}
+	
 	public void logoutMacOS(){
 		
 	}

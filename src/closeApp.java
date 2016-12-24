@@ -12,6 +12,7 @@ public class closeApp {
 			String closeProg = closeScan.next();
 			try{
 				rs.exec("pkill " + closeProg);
+				System.out.println("Closing " + closeProg);
 				isExecuted = true;
 			}
 			catch (IOException e){
@@ -20,15 +21,19 @@ public class closeApp {
 			}
 		}
 	}
+	
 	public void closeWin7(){
 		
 	}
+	
 	public void closeWin8(){
 		
 	}
+	
 	public void closeWin10(){
 		
 	}
+	
 	public void closeMacOS(){
 		
 	}

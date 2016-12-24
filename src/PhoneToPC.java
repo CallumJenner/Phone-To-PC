@@ -11,9 +11,7 @@ import org.apache.commons.lang3.SystemUtils;
  * Android Studio and a GUI for the PC application in the future.
  */
 
-// Add OS detection e.g is it on Windows, Mac or Linux and adjust accordingly
-
-// Implement APIs of Spotify, Chrome etc.
+// Implement APIs of Spotify, Chrome etc if possible.
 
 // Add notification mirroring
 
@@ -70,7 +68,48 @@ public class PhoneToPC {
 		}
 		
 		if(SystemUtils.IS_OS_WINDOWS_7){
-            System.out.println("Windows 7 support coming soon");
+            System.out.println("WARNING! This software is still in a very early stage and has not been tested, "
+            		+ "proceed at your own risk");
+            System.out.print("Do you want to continue? Y/N");
+            String win7Cont = mainScan.next();
+            if (win7Cont == "Y"){
+            	while (true){		
+    				System.out.print("Command: ");
+    				String mainCommand = mainScan.next().toUpperCase();
+    				
+    				switch (mainCommand){
+    				case "C":
+    					closeApp closeObject = new closeApp();
+    					closeObject.closeWin7();
+    					break;
+    				case "L":
+    					logout logoutObject = new logout();
+    					logoutObject.logoutWin7();
+    					break;
+    				case "O":
+    					openApp openObject = new openApp();
+    					openObject.openWin7();
+    					break;
+    				case "P":
+    					poweroff poweroffObject = new poweroff();
+    					poweroffObject.poweroffWin7();
+    					break;
+    				case "R":
+    					restart restartObject = new restart();
+    					restartObject.restartWin7();
+    					break;
+    				case "V":
+    					volume volumeObject = new volume();
+    					volumeObject.volumeWin7();
+    					break;
+    				case "Q":
+    					System.out.println("Goodbye");
+    					System.exit(0);
+    				default:
+    					System.out.println("Please enter a valid command");
+    				}
+            	}
+            }
 		}
 		
 		if(SystemUtils.IS_OS_WINDOWS_8){

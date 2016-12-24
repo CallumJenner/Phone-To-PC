@@ -12,6 +12,7 @@ public class openApp {
 		    String openProg = openScan.next();
 			try {
 				rs.exec(openProg);
+				System.out.println("Opening " + openProg);
 				isExecuted = true;
 			}
 			catch (IOException e){
@@ -24,15 +25,19 @@ public class openApp {
 			}
 	    }
 	}
+	
 	public void openWin7(){		// See if can make all win in one
 		
 	}
+	
 	public void openWin8(){
 		
 	}
+	
 	public void openWin10(){
 		
 	}
+	
 	public void openMacOS(){
 		
 	}

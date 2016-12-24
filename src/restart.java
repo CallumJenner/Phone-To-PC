@@ -19,15 +19,19 @@ public class restart {
 			System.out.println("Restart failed");
 		}
 	}
+	
 	public void restartWin7(){
 		
 	}
+	
 	public void restartWin8(){
 		
 	}
+	
 	public void restartWin10(){
 		
 	}
+	
 	public void restartMacOS(){
 		
 	}
